@@ -1,0 +1,329 @@
+/*All web pages*/
+
+
+
+/* 
+
+
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;;
+    color:black;
+    background-color: wheat;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 18pt;
+}
+p{
+    font-size: 16pt;
+    margin: 10px 0 10px 0;
+}
+a {
+    text-decoration: none;
+}
+.title{
+    background-color: rgb(238, 125, 84);
+    padding-top:15px;
+    padding-bottom:15px;
+}
+.labels-container {
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+}
+.labels-top {
+    font-size: 15pt;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    color:  #05386B;
+    text-decoration: none;
+}
+#on-page {
+    color: #05386B;
+}
+
+/*Home page*/
+.home-background-image{ 
+    background-color: #026670;
+    height: 80vh;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+/* .background-image{ 
+    background-image: url("../images/alice-mountain-jpeg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+} */
+/* .intro-hello{
+    margin-top: 20px;
+    font-size: 30pt;
+    padding-top: 60px;
+    padding-left: 90px;
+    width: 50%;
+    color: #FCE181;
+}
+.intro-para{
+    font-size: 18pt;
+    padding-left: 90px;
+    width: 50%;
+    line-height: 1.5;
+    color: #FCE181;
+}
+.intro-northcoder{
+    font-size: 18pt;
+    padding-left: 90px;
+    width: 50%;
+    line-height: 1.5;
+}
+.alice-photo{
+    width: 250px;
+    height: 250px;
+}
+.intro-footer{
+    margin-left: 80px;
+    margin-right: 80px;
+    display: block;
+    text-align: center;
+}
+.contact-link{
+    text-decoration: none;
+    color: #026670;
+} */
+
+
+/*Coding Page*/
+/* .coding-container{ 
+    background-color: #EDEAE5;
+    height: 1300px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.coding-para{ */
+    /* padding-top: 40px; */
+    /* padding-left: 70px;
+    padding-right: 70px;
+    line-height: 1.3;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 20px;
+} */
+
+/*Coding Page - Project cards*/
+.project-cards{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1000px;
+}
+.project-card{
+    /* border: 3px solid #05386B; */
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+    background-color:#026670;
+    margin-bottom: 20px;
+    color: #FCE181;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.card-photo{
+    width: 310px;
+}
+.card-text p{
+    font-size: 14pt;
+}
+.card-links-container{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: inherit;
+}
+.devicon-github-plain-wordmark{
+    font-size: 50pt;
+}
+/* .button {
+    border: none;
+    outline: 0;
+    display: block;
+    padding: 8px;
+    color: #026670;
+    font-size: 12pt;
+    background-color: #9FEDD7;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+} */
+
+/* 
+.button:hover {
+    background-color: #FCE181;
+} */
+
+/*Events Page*/
+
+.events-background-image{ 
+    background-color: #EDEAE5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1300px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.events-para{
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height: 1.3;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.events-photos-intro{
+    padding-left: 70px;
+    padding-right: 70px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*Events Page - Photos Grid*/
+.photos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 800px;
+}
+.grid-photo{
+    height: 250px;
+    width: 250px;
+    /* margin-bottom: 40px; */
+    border-radius: 1px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 250px;
+    height: 250px;
+    border-radius: 1px;
+    margin-top: 20px;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    /* width: 100%; */
+    height: inherit;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    /* background-color: #026670; would like to add random colour generator function here */
+    color: #FCE181;
+    transform: rotateY(180deg);
+    border-radius: 1px;
+    /* padding: 20px; */
+}
+.card-back-container p {
+    padding: 15px;
+}
+
+.card-back-container p {
+    font-size: 12pt;
+}
+/* .photo-text{
+    font-size: 12pt;
+} */
+
+
+
+
+
+/*Contact Page*/
+
+form{
+    margin-top: 50px;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; 
+}
+.form-control{
+    display: block;
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: transparent;
+    border:2pt solid rgb(61, 131, 131);
+    font-size: 15pt;
+}
+input{
+    height: 25px;
+    border-radius: 10px;
+}
+textarea{
+    border-radius: 10px;
+}
+form .submit{
+background: rgb(242, 170, 144);
+border-color: transparent;
+color: darkslategray;
+font-size: 20px;
+font-weight: bold;
+height: 50px;
+margin-top: 20px;
+width: 500px;
+opacity: 0.6;
+}
+form .submit:hover {
+    opacity: 1;
+}
+.main-content{
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: justify;
+}
+
+
+
+ */

@@ -7,48 +7,52 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+
     <title>Coding</title>
 </head>
 
 <body>
     <header class="header">
+        <h1><a href="./home.html">Alice Horsey</h1></a>
         <nav>
             <a class="labels-top" href="./home.html">About</a>
             <a class="labels-top" id="on-page">Coding</a>
             <a class="labels-top" href="./events.html">Live Events</a>
             <a class="labels-top" href="./contact.html">Contact</a>
-
-
-
-
         </nav>
     </header>
 
-    <div class="coding-background-image">
-        <!-- <p class="coding-title">Coding Projects</p> -->
-
-        <p class="coding-para">My inquisitive nature and life-long ambition to "build things" has
-            sparked my desire to learn more about how software is created. I love the satisfaction of
-            finally getting something to work, coupled with the almost endless opportunities to research and use
-            different types of
-            technologies to create something new.</p>
-        <p class="coding-projects-intro">Here are a selection of
-            projects
-            I have worked on whilst studying
-            full-stack development at Northcoders.</p>
-
+    <div class="coding-container">
+        <h1>Coding Projects</h1>
+        <div class="coding-para">
+            <p>My inquisitive nature and life-long ambition to "build things" has
+                sparked my desire to learn more about how software is created. I love the satisfaction of
+                finally getting something to work, coupled with the almost endless opportunities to research and use
+                different types of
+                technologies to create something new.</p>
+            <p>Here are a selection of
+                projects
+                I have worked on whilst studying
+                full-stack development at Northcoders.</p>
+        </div>
         <section class="project-cards">
-            <div class="card-outer">
+            <div class="project-card">
                 <img src="../images/portfolio-pic.jpeg" alt="Portfolio Homepage" class="card-photo">
-                <p class="card-title">Portfolio Website</p>
-                <p class="card-info">A fully-responsive website built using HTML, CSS and Javascript, to add a bit of
-                    extra functionality.</p>
-                <p class="card-info">An
-                    opportunity to showcase my attention to detail and develop new skills in web development.</p>
-
-                <p class="card-link"><button class="button">GITHUB</button></p>
+                <h2>Portfolio Website</h2>
+                <div class="card-text">
+                    <p>A fully-responsive website built using HTML, CSS and Javascript, to add a bit
+                        of
+                        extra functionality.</p>
+                    <p>An
+                        opportunity to showcase my attention to detail and develop new skills in web development.</p>
+                </div>
+                <div class="card-links-container">
+                    <a href="https://github.com/AliceH-uk/alice-portfolio" target="_blank"><i
+                            class="devicon-github-plain-wordmark colored"></i></a>
+                </div>
             </div>
-            <div class="card-outer">
+            <div class="project-card">
                 <img src="../images/pending.jpg" alt="Terminal Game" class="card-photo">
                 <p class="card-title">Terminal Game</p>
                 <p class="card-info">A Javascript fundamentals project featuring object-oriented
@@ -59,7 +63,7 @@
 
                 <p class="card-link"><button class="button">GITHUB</button></p>
             </div>
-            <div class="card-outer">
+            <div class="project-card">
                 <img src="../images/pending.jpg" alt="News Application" class="card-photo">
                 <p class="card-title">News Application</p>
                 <p class="card-info">A full-stack Javascript RESTful application. The back-end was built using SQL,
@@ -69,7 +73,7 @@
                 <p class="card-link"><button class="button">APPLICATION</button><button class="button">GITHUB</button>
                 </p>
             </div>
-            <div class="card-outer">
+            <div class="project-card">
                 <img src="../images/pending.jpg" alt="Coffee Machine" class="card-photo">
                 <p class="card-title">Coffee Machine</p>
                 <p class="card-info">A fun coffee machine which started as a morning Javascript Object-Oriented
