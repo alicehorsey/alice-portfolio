@@ -1,32 +1,26 @@
 const backgroundColors = {
-    1: ["black", "white"],
-    2: ["purple", "black"],
-    3: ["green", "purple"],
-    4: ["yellow", "blue"],
-    5: ["blue", "white"],
-    6: ["orange", "green"],
-    7: ["violet", "black"],
-    8: ["pink", "black"],
-    9: ["grey", "yellow"],
-    10: ["turquoise", "blue"],
-
+    1: "#F9A66C",
+    2: "#F17A7E",
+    3: "#FFC94B",
+    4: "#39b3e8",
+    5: "#32a530",
 }
 
 function randomNum() {
-    return Math.floor(Math.random() * 10 + 1)
+    return Math.floor(Math.random() * 5 + 1)
 }
 
 function setInitialColour() {
     let cards = document.getElementsByClassName("flip-card-back");
     for (let i = 0; i < cards.length; i++) {
-        cards[i].style.backgroundColor = backgroundColors[randomNum()][0]
-        cards[i].style.color = backgroundColors[randomNum()][1]
+        cards[i].style.backgroundColor = backgroundColors[randomNum()]
+        // cards[i].style.color = backgroundColors[randomNum()]
     }
 }
 
 function changeColour(card) {
     setTimeout(() => {
-        card.style.backgroundColor = backgroundColors[randomNum()][0]
-        card.style.color = backgroundColors[randomNum()][1]
+        card.style.backgroundColor = backgroundColors[randomNum()]
+        // card.style.color = backgroundColors[randomNum()]
     }, 500)
 }

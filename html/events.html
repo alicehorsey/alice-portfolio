@@ -4,67 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Live Events</title>
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <title>Alice Horsey Events</title>
 </head>
 
 <body onload="setInitialColour()">
-    <header class="header">
-        <h1><a href="./home.html">Alice Horsey</h1></a>
-        <nav>
-            <a class="labels-top" href="./home.html">About</a>
-            <a class="labels-top" href="./coding.html">Coding</a>
-            <a class="labels-top" id="on-page">Live Events</a>
-            <a class="labels-top" href="./contact.html">Contact</a>
 
-        </nav>
-    </header>
+    <h1><a href="./home.html">Alice Horsey</h1></a>
 
+    <nav class="nav-bar">
+        <a class="nav-link" href="./home.html">About</a>
+        <a class="nav-link" href="./coding.html">Coding</a>
+        <a class="nav-link" id="nav-on-page">Live Events</a>
+    </nav>
 
-    <div class="events-background-image">
-        <p class="events-para">The photos below show a snapshot of my
-            ten years in the Theatre and Live Events industry! As a stage manager, creative problem solving, excellent
-            communication, analytical
-            thinking and organisation, responding to change, managing people and lots of quick thinking in live
-            situations (to
-            ensure the show carries on, no matter what is happening behind the scenes!) are all part of
-            daily life.</p>
-        <!-- <p class="events-photos-intro">It was challenging in ways I could not have imagined and more rewarding
-            than I had ever hoped. It was FUN!</p> -->
+    <main>
+        <div class="events-intro">
+            <p>
+                I am confident in my approach to practical problem solving having been part of the team that supports
+                and coordinates the smooth running of live performances in London's West End and on tour in the UK and
+                Asia.
+            </p>
+            <p>The images below show a snapshot of my
+                ten year career working in stage management.<br>To view more information you can hover
+                over the grid!</p>
+
+        </div>
+
 
         <section class="photos-container">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/tunnocks.jpeg"
-                            alt="Commonwealth Games 2014 Tunnocks">
+                        <img class="grid-photo" src="../images/compressed-imgs/matilda.jpeg" alt="Matilda The Musical">
                     </div>
                     <div class="flip-card-back" onmouseleave="changeColour(this)">
                         <div class="card-back-container">
-                            <p>Glasgow 2014 Commonwealth Games Opening Ceremony.</p>
-                            <p>I stage managed the famous dancing tunnocks teacakes before helping to
-                                coordinate the
-                                athletes parade!</p>
+                            <p>Matilda The Musical<br>2017-2019</p>
+                            <p>I worked on Matilda The Musical in the West End and on its UK tour. A
+                                highlight
+                                was calling the show to an audience of 3000 people at Edinburgh Playhouse.
+                            </p>
                         </div>
+
                     </div>
                 </div>
             </div>
 
 
+
+
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/shanghai.jpeg" alt="Shanghai 2015">
+                        <img class="grid-photo" src="../images/compressed-imgs/shanghai.jpeg" alt="Shanghai 2015">
                     </div>
                     <div class="flip-card-back" onmouseleave="changeColour(this)">
                         <div class="card-back-container">
-                            <p>Shanghai Culture Square Theatre 2015</p>
+                            <p>Culture Square Theatre<br> Shanghai 2015</p>
                             <p>My first foreign job was in China. I worked on a musical megamix show
                                 featuring Broadway and
                                 West
-                                End stars.</p>
+                                End stars alongside local musical theatre students and a children's choir.</p>
                         </div>
                     </div>
                 </div>
@@ -75,13 +78,14 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/ghd.jpeg" alt="Groundhog Day 2016">
+                        <img class="grid-photo" src="../images/compressed-imgs/ghd.jpeg" alt="Groundhog Day 2016">
                     </div>
                     <div class="flip-card-back" onmouseleave="changeColour(this)">
                         <div class="card-back-container">
                             <p>Groundhog Day<br> The Old Vic 2016</p>
-                            <p>8 weeks in rehearsals, 5 weeks in "tech" rehearsals on
-                                stage and 5 weeks of preview performances before we finally had Press Night for
+                            <p>We rehearsed for 8 weeks in multiple rehearsal rooms,<br> 5 weeks on stage and performed
+                                another 5 weeks of
+                                preview shows before the official Press Night for
                                 Groundhog
                                 Day!</p>
                         </div>
@@ -93,138 +97,185 @@
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/ghost-team.jpeg" alt="Ghost China 2016">
+                        <img class="grid-photo" src="../images/compressed-imgs/ghost-team.jpeg" alt="Ghost China 2016">
                     </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Ghost The Musical<br> China Tour 2016-2017</p>
-                        <p class="photo-text">4 months on the road visiting 12 cities across China. Here with the Stage
-                            Management Team
-                            about
-                            begin another truck pack.
-                        </p>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Ghost The Musical<br> China Tour 2016-2017</p>
+                            <p>4 months on the road visiting 12 cities across China, including Beijing and Shanghai.
+                                Here with the Stage
+                                Management Team
+                                about
+                                begin another truck pack.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="grid-photo" src="../images/compressed-imgs/groundhog.jpeg" alt="Groundhog Day Prop">
+                    </div>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Groundhog Day<br> The Old Vic 2016</p>
+                            <p>We created a props bible
+                                (manual) which was sent to the American production team before the show successfully
+                                transferred to Broadway.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="grid-photo" src="../images/compressed-imgs/old-vic.jpeg" alt="The Old Vic Theatre">
+                    </div>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>The Old Vic Theatre</p>
+                            <p>Home of Groundhog Day for the summer of 2016 and one of my favourite
+                                theatres!
+                            </p>
+                            <a href="https://www.oldvictheatre.com/"><img class="old-vic-logo"
+                                    alt="Old Vic Theatre logo" src="../images/oldvic.jpeg" /></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="grid-photo" src="../images/compressed-imgs/girls-cakes.jpeg"
+                            alt="The Girls Cupcakes">
+                    </div>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Cupcakes for The Girls Musical 2015</p>
+                            <p>Gary Barlow and Tim Firth's beautiful musical about the Calendar Girls.
+                                The show premiered in
+                                Leeds and it was my first job back in Yorkshire!
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/groundhog.jpeg" alt="Groundhog Day Prop">
+                        <img class="grid-photo" src="../images/compressed-imgs/ghost.jpeg" alt="Ghost the Musical">
                     </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Groundhog Day<br> The Old Vic 2016</p>
-                        <p class="photo-text">The prop groundhog!<br> We created a production props bible to send to
-                            America before the
-                            transfer of the show to Broadway.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/old-vic.jpeg" alt="The Old Vic Theatre">
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">The Old Vic Theatre</p>
-                        <p class="photo-text">Home of Groundhog Day for the summer of 2016 and one of my favourite
-                            theatres!
-                        </p>
-                        <a href="https://www.oldvictheatre.com/" target="_blank"><input type=button
-                                value='Visit THEOLDVIC!'></a>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Ghost The Musical<br> China Tour 2016-2017</p>
+                            <p>The theatres we visited on tour in China were huge, often spaceship shaped
+                                buildings with
+                                lots of
+                                advertisments front of house.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/girls-cakes.jpeg" alt="The Girls Cupcakes">
+                        <img class="grid-photo" src="../images/compressed-imgs/mm-sign.jpeg"
+                            alt="Mamma Mia in Hong Kong">
                     </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Cupcakes for The Girls Musical 2015</p>
-                        <p class="photo-text">Gary Barlow and Tim Firth's beautiful musical about the Calendar Girls.
-                            The show premiered in
-                            Leeds and it was my first job back in Yorkshire!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/ghost.jpeg" alt="Ghost the Musical">
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Ghost The Musical<br> China Tour 2016-2017</p>
-                        <p class="photo-text">The theatres we visited on tour in China were huge, often spaceship shaped
-                            buildings with
-                            lots of
-                            advertisments front of house.
-                        </p>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Mamma Mia!<br>2018-2019</p>
+                            <p>Following a month in the UK we embarked on a fantastic international tour visiting
+                                Toronto,
+                                Jakarta,
+                                Manilla, Singapore, Columbo and Hong Kong!
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/mm-sign.jpeg" alt="Mamma Mia in Hong Kong">
-                    </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Mamma Mia!<br>2018-2019</p>
-                        <p class="photo-text">Following a month in the UK we embarked on a fantastic international
-                            visiting Toronto,
-                            Jakarta,
-                            Manilla, Singapore, Columbo and Hong Kong!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/mamma-mia-1.jpeg"
+                        <img class="grid-photo" src="../images/compressed-imgs/mamma-mia-1.jpeg"
                             alt=" Mamma Mia backstage">
                     </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Mamma Mia!<br>2018-2019</p>
-                        <p class="photo-text">Checking in beginners for the top of Act 2.<br> Ready with my tick list
-                            and headset,
-                            backstage on
-                            tour!
-                        </p>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Mamma Mia!<br>2018-2019</p>
+                            <p>Checking in beginners for the top of Act 2.<br> Ready with my tick list
+                                and headset,
+                                backstage on
+                                tour!
+
+                            </p>
+                            <p id="photo-text">(Photo from MM! Instagram)</p>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/mm-team.jpeg" alt=" Mamma Mia team">
+                        <img class="grid-photo" src="../images/compressed-imgs/mm-team.jpeg" alt=" Mamma Mia team">
                     </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Mamma Mia!<br>2018-2019</p>
-                        <p class="photo-text">My International Tour Stage Management team became friends to have
-                            adventures with whilst
-                            working
-                            on the other side of the world!
-                        </p>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Mamma Mia!<br>2018-2019</p>
+                            <p>My International Tour Stage Management team.<br>This photo was taken just before one of
+                                our
+                                final performances in Hong Kong.
+                            </p>
+                        </div>
+
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
-                        <img class="grid-photo" src="../images/events-photos/matilda.jpeg" alt="Matilda The Musical">
+                        <img class="grid-photo" src="../images/compressed-imgs/tunnocks.jpeg"
+                            alt="Commonwealth Games 2014 Tunnocks">
                     </div>
-                    <div class="flip-card-back">
-                        <p class="photo-text">Matilda The Musical<br>2019</p>
-                        <p class="photo-text">I worked on Matilda in the West End and for six months on tour. A
-                            highlight
-                            was calling the show to an audience of 3000 people at Edinburgh Playhouse.
-                        </p>
+                    <div class="flip-card-back" onmouseleave="changeColour(this)">
+                        <div class="card-back-container">
+                            <p>Commonwealth Games Opening Ceremony<br> Glasgow 2014</p>
+                            <p>I stage managed the famous dancing tunnocks teacakes section of the opening ceremony
+                                before helping to
+                                coordinate the
+                                athletes parade!</p>
+                        </div>
                     </div>
                 </div>
             </div>
-    </div>
-    </section>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="https://github.com/alicehorsey" target="_blank">
+            <i class="devicon-github-original-wordmark colored"></i></a>
+        <a href="https://www.linkedin.com/in/alice-horsey-23aa661bb/" target="_blank"><i
+                class="devicon-linkedin-plain colored"></i></a>
+
+    </footer>
+
     <script src="../js/events-photos.js"></script>
 </body>
 
